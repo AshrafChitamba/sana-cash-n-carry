@@ -1,8 +1,11 @@
+"use client"
+
 import { MdOutlineLocationOn, MdAccessTime, MdCall } from "react-icons/md";
+import { StoresMaps } from "./StoresMaps";
 
 export const StoresSection = () => {
   return (
-    <section className="bg-[#f9fafb] py-10 px-8">
+    <section className="bg-white py-10 px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-medium text-header-text mb-3">
@@ -48,7 +51,9 @@ export const StoresSection = () => {
               <img src="/lines.svg" alt="lines" />
             </div>
           </div>
-          <div className="col-span-2 w-fulll h-full"></div>
+          <div className="col-span-2 w-fulll h-full">
+            <StoresMaps />
+          </div>
         </div>
       </div>
     </section>
