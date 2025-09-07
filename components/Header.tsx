@@ -4,9 +4,7 @@ export const Header = () => {
   return (
     <header className="relative">
       <div className="bg-[#f9fafb] flex justify-end gap-x-8 px-8 py-3">
-        <span className="text-header-text text-[14px]">
-          (+265) 988 88 88 20
-        </span>
+        <span className="text-header-text text-[14px]">(+265) 994 351 384</span>
 
         <div className="flex items-center gap-x-2.5">
           <a href="http://#" target="_blank" rel="noopener noreferrer">

@@ -82,7 +82,7 @@ export const Footer = () => {
       </div>
 
       <small className="block bg-[#013334] py-3.5 px-8 text-center">
-        © {currentYear} Sana Cash &apos;n&apos; Carry. All right reserved
+        &copy; {currentYear} Sana Cash &apos;n&apos; Carry. All right reserved
       </small>
     </footer>
   );
