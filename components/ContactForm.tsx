@@ -17,10 +17,13 @@ export const ContactForm = () => {
   } = useForm({
     resolver: yupResolver(contactSchema),
     defaultValues: {
-      name: "",
+      firstName: "",
+      lastName: "",
+      phoneNumber: "",
       email: "",
-      subject: "",
-      message: "",
+      country: "",
+      city: "",
+      message: undefined
     },
   });
 
@@ -38,34 +41,34 @@ export const ContactForm = () => {
           id="first-name"
           placeholder="Enter first name"
           label="First Name"
-          registerProps={register("name")}
-          error={errors.name}
+          registerProps={register("firstName")}
+          error={errors.firstName}
           disabled={isLoading}
         />
         <TextInputField
           id="last-name"
           placeholder="Enter last name"
           label="Last Name"
-          registerProps={register("name")}
-          error={errors.name}
+          registerProps={register("lastName")}
+          error={errors.lastName}
           disabled={isLoading}
         />
       </div>
       <div className="grid grid-cols-2 gap-3">
         <TextInputField
-          id="phone-number"
-          placeholder="(+265) 994 351 384"
-          label="Phone Number"
-          registerProps={register("name")}
-          error={errors.name}
-          disabled={isLoading}
-        />
-        <TextInputField
           id="email"
           placeholder="Enter email address"
           label="Email Address"
-          registerProps={register("name")}
-          error={errors.name}
+          registerProps={register("email")}
+          error={errors.email}
+          disabled={isLoading}
+        />
+        <TextInputField
+          id="phone-number"
+          placeholder="(+265) 994 351 384"
+          label="Phone Number"
+          registerProps={register("phoneNumber")}
+          error={errors.phoneNumber}
           disabled={isLoading}
         />
       </div>
@@ -74,16 +77,16 @@ export const ContactForm = () => {
           id="country"
           placeholder="Enter country"
           label="Country"
-          registerProps={register("name")}
-          error={errors.name}
+          registerProps={register("country")}
+          error={errors.country}
           disabled={isLoading}
         />
         <TextInputField
           id="city"
           placeholder="Enter city"
           label="City"
-          registerProps={register("name")}
-          error={errors.name}
+          registerProps={register("city")}
+          error={errors.city}
           disabled={isLoading}
         />
       </div>
@@ -99,7 +102,7 @@ export const ContactForm = () => {
         />
       </div>
 
-      <button className="w-full bg-primary text-white py-3 px-4 rounded-[10px] font-medium">
+      <button className="w-full bg-primary capitalize text-white py-3 px-4 rounded-[10px] font-medium">
         send message
       </button>
     </form>

@@ -46,7 +46,7 @@ export const TextInputField: FC<TextInputFieldProps> = (props) => {
         )}
 
         {props.error && (
-          <p className="mt-1 text-sm text-red-600 text-start!">
+          <p className="mt-1 text-xs text-red-600 text-start!">
             {props.error.message ?? ""}
           </p>
         )}
