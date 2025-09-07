@@ -15,7 +15,7 @@ export const HistoriesSection = () => {
     setDirection(newDirection);
   }
   return (
-    <section className="py-6 px-8">
+    <section className="py-6 px-4 sm:px-8">
       <div className="max-w-[93rem] mx-auto">
         <h2 className="text-3xl font-medium text-header-text mb-2">
           Sana Cash n Carry
@@ -26,7 +26,7 @@ export const HistoriesSection = () => {
         </p>
       </div>
 
-      <div className="py-10 overflow-hidden max-w-[93rem] mx-auto">
+      <div className="py-8 overflow-hidden max-w-[93rem] mx-auto">
         <AnimatePresence custom={direction} initial={false} mode="wait">
           <HistorySlide
             key={currentIndex}

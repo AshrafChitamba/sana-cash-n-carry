@@ -28,16 +28,16 @@ export const HistorySlide = (props: HistorySlideProps) => {
       }}
       exit={{ opacity: 0, x: direction * -50 }}
     >
-      <div className="grid grid-cols-5 gap-8">
-        <div className="col-span-2 w-full h-full">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+        <div className="lg:col-span-2 w-full h-full">
           <img
             src={props.image}
             alt={`${props.image}_History`}
-            className="w-full h-[400px] object-cover rounded-[10px] grayscale"
+            className="w-full h-[300px] sm:h-[400px] md:h-[480px] xl:h-[420px] object-cover rounded-[10px] grayscale"
           />
         </div>
-        <div className="col-span-3 flex flex-col justify-between">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="lg:col-span-3 flex flex-col justify-between gap-y-4 sm:gap-y-5 lg:py-3.5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {props.slideHistories.slice(0, 2).map((slideHistory, index) => (
               <Fragment key={index}>
                 {slideHistory ? (
