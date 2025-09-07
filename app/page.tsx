@@ -1,6 +1,6 @@
 import { BigClientsSection } from "@/components/BigClientsSection";
 import { CategoriesSection } from "@/components/CategoriesSection";
-import { ContactUsSection } from "@/components/ContactUsSection";
+import { ContactUsSection } from "@/components/ContactSection/ContactUsSection";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";

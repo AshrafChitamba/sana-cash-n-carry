@@ -4,8 +4,8 @@ import { ContactFormData, contactSchema } from "@/lib/contactSchema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { TextInputField } from "./TextInputField";
-import { sendContactMessage } from "@/app/actions"
+import { TextInputField } from "../TextInputField";
+import { sendContactMessage } from "@/app/actions";
 
 export const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -23,12 +23,14 @@ export const ContactForm = () => {
       email: "",
       country: "",
       city: "",
-      message: undefined
+      message: undefined,
     },
   });
 
-  const submitContactForm = (data: ContactFormData) => {
-    sendContactMessage(data);
+  const submitContactForm = async (data: ContactFormData) => {
+    setIsLoading(true);
+    await sendContactMessage(data);
+    setIsLoading(false);
   };
 
   return (
