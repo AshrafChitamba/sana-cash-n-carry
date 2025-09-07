@@ -15,7 +15,7 @@ export const CategoriesSection = () => {
               key={index}
               className={`
                 bg-white p-6 text-center hover:bg-gray-50 transition-colors duration-200 cursor-context-menu border-gray-300
-                ${index > 6 ? "border-t" : ""}
+                ${index > 5 ? "border-t" : ""}
                 ${index % 6 !== 5 ? "border-r" : ""}
               `}
             >
