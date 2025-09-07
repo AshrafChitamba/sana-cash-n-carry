@@ -30,7 +30,7 @@ Leaflet.Icon.Default.mergeOptions({
     "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
 });
 
-export function StoresMaps() {
+export default function StoresMaps() {
   const stores: Store[] = [
     {
       id: 1,

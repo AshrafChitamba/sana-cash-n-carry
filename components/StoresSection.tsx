@@ -1,7 +1,7 @@
 "use client"
 
 import { MdOutlineLocationOn, MdAccessTime, MdCall } from "react-icons/md";
-import { StoresMaps } from "./StoresMaps";
+import { StoresMapsWrapper } from "./StoresMapsWrapper";
 
 export const StoresSection = () => {
   return (
@@ -52,7 +52,7 @@ export const StoresSection = () => {
             </div>
           </div>
           <div className="col-span-2 w-fulll h-full">
-            <StoresMaps />
+            <StoresMapsWrapper />
           </div>
         </div>
       </div>
