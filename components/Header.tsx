@@ -15,9 +15,9 @@ export const Header = () => {
       <header className="relative">
         <div className="bg-[#f9fafb] px-8 py-3">
           <div className="flex justify-end gap-x-8 max-w-[93rem] mx-auto">
-            <span className="text-header-text text-[14px]">
+            <a href="tel:" className="text-header-text text-[14px]">
               (+265) 994 351 384
-            </span>
+            </a>
 
             <div className="flex items-center gap-x-2.5">
               <a href="#" target="_blank" rel="noopener noreferrer">
@@ -39,19 +39,19 @@ export const Header = () => {
             </div>
             <ul className="items-center gap-x-8 text-[#FCFCFC] hidden md:flex">
               <li>
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#">About us</a>
+                <a href="#categories">Categories</a>
               </li>
               <li>
-                <a href="#">History</a>
+                <a href="#history">History</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#stores">Find a store</a>
               </li>
               <li>
-                <a href="#">Find a store</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
             <div className="block md:hidden">
@@ -91,7 +91,7 @@ export const Header = () => {
             <ul className="space-y-5">
               <li>
                 <a
-                  href="#"
+                  href="#home"
                   className="block text-gray-800 text-lg font-medium py-2"
                 >
                   Home
@@ -99,15 +99,15 @@ export const Header = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#categories"
                   className="block text-gray-800 text-lg font-medium py-2"
                 >
-                  About us
+                  Categories
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#history"
                   className="block text-gray-800 text-lg font-medium py-2"
                 >
                   History
@@ -115,18 +115,18 @@ export const Header = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#stores"
                   className="block text-gray-800 text-lg font-medium py-2"
                 >
-                  Contact
+                  Find a store
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contact"
                   className="block text-gray-800 text-lg font-medium py-2"
                 >
-                  Find a store
+                  Contact
                 </a>
               </li>
             </ul>

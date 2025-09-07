@@ -19,27 +19,27 @@ export const Footer = () => {
             <h4 className="font-semibold text-xl mb-2">Quick Links</h4>
             <ul className="flex flex-col items-start gap-2 text-[#FCFCFC]">
               <li>
-                <a href="#" className="text-sm">
+                <a href="#home" className="text-sm">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm">
+                <a href="#categories" className="text-sm">
                   Our Categories
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm">
+                <a href="#history" className="text-sm">
                   Our History
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm">
+                <a href="#contact" className="text-sm">
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm">
+                <a href="#stores" className="text-sm">
                   Find a store
                 </a>
               </li>
@@ -49,7 +49,7 @@ export const Footer = () => {
             <h4 className="font-semibold text-xl mb-2">Get In Touch</h4>
             <ul className="flex flex-col items-start gap-2 text-[#FCFCFC]">
               <li>
-                <a href="#" className="text-sm">
+                <a href="tel:" className="text-sm">
                   (+265) 988 88 88 20
                 </a>
               </li>

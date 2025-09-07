@@ -24,4 +24,5 @@
 
 body {
   background: #fff;
+  scroll-behavior: smooth !important;
 }

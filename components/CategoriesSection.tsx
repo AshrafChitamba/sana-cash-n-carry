@@ -2,7 +2,7 @@ import { categories } from "@/data/categories";
 
 export const CategoriesSection = () => {
   return (
-    <section className="px-4 sm:px-8 py-8 bg-white">
+    <section id="categories" className="px-4 sm:px-8 py-8 bg-white">
       <div className="max-w-[93rem] mx-auto">
         <h2 className="text-3xl font-medium text-header-text mb-8">
           Our Categories

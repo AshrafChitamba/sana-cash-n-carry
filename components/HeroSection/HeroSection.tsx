@@ -1,4 +1,3 @@
-import React from "react";
 import { Highlights } from "./Highlights";
 
 export const HeroSection = () => {
@@ -23,7 +22,7 @@ export const HeroSection = () => {
             Supermarket
           </h1>
           <a
-            href="#"
+            href="/#contact-us"
             className="w-fit bg-[#fcfcfc] font-semibold text-header-text text-[14px] px-7 py-2.5 rounded-3xl"
           >
             contact us
