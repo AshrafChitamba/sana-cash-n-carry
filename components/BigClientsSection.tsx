@@ -16,7 +16,7 @@ export const BigClientsSection = () => {
     <div className="bg-white py-7 px-8 overflow-hidden w-full">
       <motion.div
         ref={carouselContainerRef}
-        className="grid grid-flow-col justify-center auto-cols-[200px] gap-8"
+        className="grid grid-flow-col justify-center auto-cols-[200px] gap-8 max-w-[93rem] mx-auto"
         style={{ x: horizontalPosition }}
       >
         {revealingItems.map((logoUrl, itemIndex) => (

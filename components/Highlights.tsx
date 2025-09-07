@@ -9,13 +9,12 @@ const highlights = [
   "Malawi's leading retail",
   "20+ Supermarkets",
   "Verified Warehouse",
-  "International Market",
 ];
 
 export const Highlights = () => {
   return (
     <section className="w-full overflow-x-auto">
-      <div className="flex flex-wrap gap-4 py-6 w-full">
+      <div className="flex flex-wrap gap-4 py-6 w-full max-w-[93rem] mx-auto">
         {highlights.map((item, index) => (
           <div
             key={index}

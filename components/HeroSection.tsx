@@ -4,7 +4,7 @@ import { Highlights } from "./Highlights";
 export const HeroSection = () => {
   return (
     <section className="bg-[#f0fafb] px-8 py-4">
-      <div className="relative h-[580px] w-full bg-[url('/hero-banner.jpg')] bg-cover bg-center rounded-[10px] overflow-hidden grid content-center pl-[5%]">
+      <div className="relative h-[580px] w-full bg-[url('/hero-banner.jpg')] bg-cover bg-center rounded-[10px] overflow-hidden grid content-center pl-[5%] max-w-[93rem] mx-auto">
         <div className="relative z-10 text-white flex flex-col gap-y-5">
           <span className="font-medium">
             Sana Cash <span className="font-bold">n</span> Carry
