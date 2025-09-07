@@ -14,7 +14,7 @@ export const histories: HistorySlideType[] = [
     image: "/history.jpg",
     slideHistories: [
       {
-        date: "24/06/1997",
+        date: "06/20/1997",
         title: "Company Registration",
         description: `Sana Cash & Carry is a chain of supermarkets in 
             Malawi with locations in Lilongwe and Blantyre. They offer a
@@ -23,7 +23,7 @@ export const histories: HistorySlideType[] = [
             delivery services through their website.`,
       },
       {
-        date: "14/05/2015",
+        date: "12/05/2015",
         title: "20+ Stores",
         description: `Sana Cash & Carry is a large retail company with 
             multiple supermarket locations across Malawi, including in
