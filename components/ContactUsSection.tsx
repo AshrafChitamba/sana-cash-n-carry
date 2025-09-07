@@ -3,7 +3,7 @@ import { ContactForm } from "./ContactForm";
 
 export const ContactUsSection = () => {
   return (
-    <section className="bg-[#f9fafb] py-10 px-8">
+    <section className="bg-[#f9fafb] py-10 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-medium text-header-text mb-3">
@@ -14,8 +14,8 @@ export const ContactUsSection = () => {
             respond as soon as possible.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-6">
-          <div className="w-fulll h-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="hidden md:block w-fulll h-full">
             <img
               src="/contact.jpg"
               alt="contact"

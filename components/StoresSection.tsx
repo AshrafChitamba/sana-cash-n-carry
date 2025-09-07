@@ -1,22 +1,22 @@
-"use client"
+"use client";
 
 import { MdOutlineLocationOn, MdAccessTime, MdCall } from "react-icons/md";
 import { StoresMapsWrapper } from "./StoresMapsWrapper";
 
 export const StoresSection = () => {
   return (
-    <section className="bg-white py-10 px-8">
+    <section className="bg-white py-10 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-medium text-header-text mb-3">
             Find Our Stores
           </h2>
           <p>
-            Visit any of our conveniently located stores across Malawi for{" "}
+            Visit any of our conveniently located stores across Malawi for
             <br /> the best shopping experience.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="relative w-fulll h-full bg-[#009689] text-white rounded-[10px] pt-6 pb-16 px-8">
             <h4 className="text-2xl mb-3">
               Sana Cash n Cary - <br /> Lilongwe Mega Store
@@ -51,7 +51,7 @@ export const StoresSection = () => {
               <img src="/lines.svg" alt="lines" />
             </div>
           </div>
-          <div className="col-span-2 w-fulll h-full">
+          <div className="lg:col-span-2 w-fulll h-full">
             <StoresMapsWrapper />
           </div>
         </div>
