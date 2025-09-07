@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import {} from "react-hook-form";
 import { Highlights } from "./Highlights";
 
 export const HeroSection = () => {
