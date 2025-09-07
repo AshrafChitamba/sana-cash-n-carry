@@ -9,8 +9,8 @@ const EMAIL_SERVER_PASSWORD = process.env.EMAIL_SERVER_PASSWORD;
 const EMAIL_RECEIVER = process.env.EMAIL_RECEIVER;
 
 export async function sendContactMessage(data: ContactFormData) {
-  const { name, email, subject, message } = data;
-  console.log({ name, email, subject, message });
+  const {  } = data;
+  
 
   // try {
   //   const transporter = createTransport({
