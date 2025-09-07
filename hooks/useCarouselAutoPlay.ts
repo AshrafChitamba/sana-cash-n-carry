@@ -1,14 +1,14 @@
 import { useMotionValue } from "motion/react";
 import { RefObject, useEffect, useState } from "react";
 
-type UseCarouselAutoPlayProps = {
-  items: unknown[];
+type UseCarouselAutoPlayProps<T = unknown> = {
+  items: T[];
   carouselContainerRef: RefObject<HTMLDivElement | null>;
 };
 const SCROLL_SPEED = 1;
 const GRID_GAP = 32;
 
-export const useCarouselAutoPlay = (props: UseCarouselAutoPlayProps) => {
+export const useCarouselAutoPlay = <T = unknown,>(props: UseCarouselAutoPlayProps<T>) => {
   const [revealingItems, setRevealingItems] = useState(props.items);
   const horizontalPosition = useMotionValue(0);
 
