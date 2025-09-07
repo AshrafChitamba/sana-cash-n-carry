@@ -1,22 +1,20 @@
 import { categories } from "@/data/categories";
-import React from "react";
 
 export const CategoriesSection = () => {
   return (
-    <section className="px-8 py-8 bg-white">
+    <section className="px-4 sm:px-8 py-8 bg-white">
       <div className="max-w-[93rem] mx-auto">
         <h2 className="text-3xl font-medium text-header-text mb-8">
           Our Categories
         </h2>
 
         <div className="border border-gray-300 rounded-lg overflow-hidden">
-          <div className="grid grid-cols-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
             {categories.map((category, index) => (
               <div
                 key={index}
-                className={`
-                bg-white p-6 text-center hover:bg-gray-50 transition-colors duration-200 cursor-context-menu border-gray-300
-                ${index > 5 ? "border-t" : ""}
+                className={`bg-white p-6 text-center hover:bg-gray-50 transition-colors duration-200 cursor-context-menu border-gray-300
+                ${index < 5 ? "" : "border-t"}
                 ${index % 6 !== 5 ? "border-r" : ""}
               `}
               >
