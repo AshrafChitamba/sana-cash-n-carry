@@ -3,13 +3,13 @@ import { Highlights } from "./Highlights";
 
 export const HeroSection = () => {
   return (
-    <section className="bg-[#f0fafb] px-8 py-4">
-      <div className="relative h-[580px] w-full bg-[url('/hero-banner.jpg')] bg-cover bg-center rounded-[10px] overflow-hidden grid content-center pl-[5%] max-w-[93rem] mx-auto">
+    <section className="bg-[#f0fafb] p-0 sm:p-4 md:py-4 md:px-8">
+      <div className="relative h-[380px] sm:h-[450px] md:h-[580px] w-full bg-[url('/hero-banner.jpg')] bg-cover bg-center sm:rounded-[10px] overflow-hidden grid content-center pl-[5%] max-w-[93rem] mx-auto">
         <div className="relative z-10 text-white flex flex-col gap-y-5">
           <span className="font-medium">
             Sana Cash <span className="font-bold">n</span> Carry
           </span>
-          <h1 className="text-7xl font-extrabold leading-snug">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold leading-snug">
             Malawi&apos;s
             <span className="relative inline-block indent-3">
               leading

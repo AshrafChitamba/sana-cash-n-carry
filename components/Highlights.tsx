@@ -13,15 +13,15 @@ const highlights = [
 
 export const Highlights = () => {
   return (
-    <section className="w-full overflow-x-auto">
+    <section className="w-full overflow-x-auto px-2">
       <div className="flex flex-wrap gap-4 py-6 w-full max-w-[93rem] mx-auto">
         {highlights.map((item, index) => (
           <div
             key={index}
             className="flex items-center gap-2 px-4 py-2 border rounded-[20px] border-header-text whitespace-nowrap bg-[#F0FAFB] cursor-context-menu"
           >
-            <FaCheck className="text-header-text" />
-            <span className="text-header-text text-sm font-medium">{item}</span>
+            <FaCheck className="text-header-text text-xs" />
+            <span className="text-header-text text-xs md:text-sm font-medium">{item}</span>
           </div>
         ))}
       </div>

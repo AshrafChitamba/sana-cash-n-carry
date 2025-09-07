@@ -45,7 +45,7 @@ export const Header = () => {
               <a href="#">Find a store</a>
             </li>
           </ul>
-          <div>
+          <div className="block md:hidden">
             <button>
               <HiBars3BottomRight className="text-[#FCFCFC]" size={30} />
             </button>
