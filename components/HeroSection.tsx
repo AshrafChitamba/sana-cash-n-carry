@@ -2,6 +2,7 @@
 
 import React from "react";
 import {} from "react-hook-form";
+import { Highlights } from "./Highlights";
 
 export const HeroSection = () => {
   return (
@@ -34,6 +35,8 @@ export const HeroSection = () => {
 
         <div className="absolute inset-0 bg-gradient-to-r from-[#01333499] from-60% to-[#d9d9d900]"></div>
       </div>
+
+      <Highlights />
     </section>
   );
 };
