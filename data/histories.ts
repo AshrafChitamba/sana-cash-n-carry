@@ -11,7 +11,7 @@ type HistorySectionType = {
 
 export const histories: HistorySectionType[] = [
   {
-    image: "/",
+    image: "/history.jpg",
     slideHistories: [
       {
         date: "24/06/1997",
