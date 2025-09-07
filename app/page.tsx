@@ -15,8 +15,8 @@ export default function Home() {
       <CategoriesSection />
       <BigClientsSection />
       <HistoriesSection />
-      <ContactUsSection />
       <StoresSection />
+      <ContactUsSection />
       <Footer />
     </main>
   );

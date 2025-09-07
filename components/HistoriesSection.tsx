@@ -15,7 +15,7 @@ export const HistoriesSection = () => {
     setDirection(newDirection);
   }
   return (
-    <section className="py-6 px-4 sm:px-8">
+    <section className="bg-[#f9fafb] py-10 px-4 sm:px-8">
       <div className="max-w-[93rem] mx-auto">
         <h2 className="text-3xl font-medium text-header-text mb-2">
           Sana Cash n Carry

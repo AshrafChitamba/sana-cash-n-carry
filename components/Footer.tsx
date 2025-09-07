@@ -3,8 +3,8 @@ export const Footer = () => {
 
   return (
     <footer className="text-white">
-      <div className="bg-primary py-10 px-8">
-        <div className="grid grid-cols-4 justify-items-center max-w-[93rem] mx-auto">
+      <div className="bg-primary py-10 px-4 sm:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:justify-items-center gap-4 max-w-[93rem] mx-auto">
           <div>
             <img src="/logo.png" alt="SANA_LOGO" className="object-contain" />
             <div className="mt-3">
@@ -15,7 +15,7 @@ export const Footer = () => {
               <p className="text-sm">Malawi leading supermarket</p>
             </div>
           </div>
-          <div>
+          <div className="sm:justify-self-center">
             <h4 className="font-semibold text-xl mb-2">Quick Links</h4>
             <ul className="flex flex-col items-start gap-2 text-[#FCFCFC]">
               <li>
@@ -45,7 +45,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="md:justify-self-center">
             <h4 className="font-semibold text-xl mb-2">Get In Touch</h4>
             <ul className="flex flex-col items-start gap-2 text-[#FCFCFC]">
               <li>
@@ -65,7 +65,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="sm:justify-self-center md:justify-self-start">
             <h4 className="font-semibold text-xl mb-2">Legal</h4>
             <ul className="flex flex-col items-start gap-2 text-[#FCFCFC]">
               <li>
