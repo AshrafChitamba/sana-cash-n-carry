@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { HiBars3BottomRight } from "react-icons/hi2";
 
 export const Header = () => {
   return (
@@ -22,12 +23,12 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      <nav className="bg-primary py-4 px-8">
+      <nav className="bg-primary p-4 md:px-8">
         <div className="max-w-[93rem] mx-auto flex justify-between">
           <div>
             <img src="/logo.png" alt="SANA_LOGO" className="object-contain" />
           </div>
-          <ul className="flex items-center gap-x-8 text-[#FCFCFC]">
+          <ul className="items-center gap-x-8 text-[#FCFCFC] hidden md:flex">
             <li>
               <a href="#">Home</a>
             </li>
@@ -44,6 +45,11 @@ export const Header = () => {
               <a href="#">Find a store</a>
             </li>
           </ul>
+          <div>
+            <button>
+              <HiBars3BottomRight className="text-[#FCFCFC]" size={30} />
+            </button>
+          </div>
         </div>
       </nav>
     </header>
