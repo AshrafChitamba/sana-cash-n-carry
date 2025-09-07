@@ -36,7 +36,7 @@ export const ContactForm = () => {
       onSubmit={handleSubmit(submitContactForm)}
       className="rounded-[10px] p-2 md:p-4 space-y-4"
     >
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <TextInputField
           id="first-name"
           placeholder="Enter first name"
@@ -54,7 +54,7 @@ export const ContactForm = () => {
           disabled={isLoading}
         />
       </div>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <TextInputField
           id="email"
           placeholder="Enter email address"
@@ -72,7 +72,7 @@ export const ContactForm = () => {
           disabled={isLoading}
         />
       </div>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <TextInputField
           id="country"
           placeholder="Enter country"
@@ -90,7 +90,7 @@ export const ContactForm = () => {
           disabled={isLoading}
         />
       </div>
-      <div className="col-span-ful">
+      <div className="col-span-full">
         <TextInputField
           type="textarea"
           id="message"
