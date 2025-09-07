@@ -1,4 +1,9 @@
-export const categories = [
+export type CategoryType = {
+  name: string;
+  image: string;
+};
+
+export const categories: CategoryType[] = [
   { name: "Furniture", image: "/furniture.jpg" },
   { name: "Hardware", image: "/hardware.jpg" },
   { name: "Groceries", image: "/groceries.jpg" },
