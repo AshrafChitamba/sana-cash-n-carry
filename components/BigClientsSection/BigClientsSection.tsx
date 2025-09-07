@@ -19,10 +19,10 @@ export const BigClientsSection = () => {
         className="grid grid-flow-col justify-center auto-cols-[90px] md:auto-cols-[200px] gap-8 max-w-[93rem] mx-auto"
         style={{ x: horizontalPosition }}
       >
-        {revealingItems.map((logoUrl, itemIndex) => (
+        {revealingItems.map((logo, itemIndex) => (
           <div key={itemIndex} className="flex items-center justify-center">
             <img
-              src={logoUrl}
+              src={logo}
               alt={`Client logo ${itemIndex + 1}`}
               className="w-24 h-auto"
             />
