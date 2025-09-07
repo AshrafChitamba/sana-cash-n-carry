@@ -34,7 +34,7 @@ export const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit(submitContactForm)}
-      className="bg-whte rounded-[10px] p-4 space-y-4"
+      className="rounded-[10px] p-2 md:p-4 space-y-4"
     >
       <div className="grid grid-cols-2 gap-3">
         <TextInputField

@@ -16,7 +16,7 @@ export const StoresSection = () => {
             <br /> the best shopping experience.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
           <div className="relative w-fulll h-full bg-[#009689] text-white rounded-[10px] pt-6 pb-16 px-8">
             <h4 className="text-2xl mb-3">
               Sana Cash n Cary - <br /> Lilongwe Mega Store
