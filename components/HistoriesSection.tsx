@@ -15,7 +15,7 @@ export const HistoriesSection = () => {
     setDirection(newDirection);
   }
   return (
-    <div className="py-6 px-8">
+    <section className="py-6 px-8">
       <div>
         <h2 className="text-3xl font-medium text-header-text mb-2">
           Sana Cash n Carry
@@ -35,6 +35,6 @@ export const HistoriesSection = () => {
           />
         </AnimatePresence>
       </div>
-    </div>
+    </section>
   );
 };

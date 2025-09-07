@@ -3,7 +3,7 @@ import React from "react";
 
 export const CategoriesSection = () => {
   return (
-    <div className="px-8 py-8 bg-white">
+    <section className="px-8 py-8 bg-white">
       <h2 className="text-3xl font-medium text-header-text mb-8">
         Our Categories
       </h2>
@@ -33,6 +33,6 @@ export const CategoriesSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

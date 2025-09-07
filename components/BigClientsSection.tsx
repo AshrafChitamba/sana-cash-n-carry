@@ -3,7 +3,7 @@ import React from "react";
 
 export const BigClientsSection = () => {
   return (
-    <div className="bg-white py-7 px-8">
+    <section className="bg-white py-7 px-8">
       <div className="grid grid-cols-5">
         {bigClients.map((clientLogo, index) => (
           <div key={index} className="flex items-center justify-center">
@@ -15,6 +15,6 @@ export const BigClientsSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
