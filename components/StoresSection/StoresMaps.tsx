@@ -1,8 +1,8 @@
 "use client";
 
+import "leaflet/dist/leaflet.css";
 import { LatLngTuple } from "leaflet";
 import Leaflet from "leaflet";
-import "leaflet/dist/leaflet.css";
 import {
   MapContainer,
   TileLayer,
