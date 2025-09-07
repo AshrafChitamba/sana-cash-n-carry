@@ -1,6 +1,19 @@
+"use client"
+
 import { histories } from "@/data/histories";
+import { AnimatePresence, wrap } from "motion/react";
+import { useState } from "react";
+import { HistorySlide } from "./HistorySlide";
 
 export const HistoriesSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState<1 | -1>(1);
+
+  function setSlide(newDirection: 1 | -1) {
+    const nextIndex = wrap(0, histories.length, currentIndex + newDirection);
+    setCurrentIndex(nextIndex);
+    setDirection(newDirection);
+  }
   return (
     <div className="py-6 px-8">
       <div>
@@ -13,36 +26,14 @@ export const HistoriesSection = () => {
         </p>
       </div>
 
-      <div className="mt-5">
-        {histories.map((history, index) => {
-          return (
-            <div key={index} className="grid grid-cols-3 gap-4">
-              <div className="w-full h-full">
-                <img
-                  src={history.image}
-                  alt={`${history.image}_History`}
-                  className="w-full h-[370px] object-cover rounded-[10px] grayscale"
-                />
-              </div>
-              <div className="col-span-2 flex flex-col justify-between">
-                <div className="grid grid-cols-2 gap-4">
-                  {history.slideHistories
-                    .slice(0, 2)
-                    .map((slideHistory, index) => (
-                      <div key={index}>
-                        <h3>{slideHistory?.date}</h3>
-                        <h4>{slideHistory?.title}</h4>
-                        <p>{slideHistory?.description}</p>
-                        <span>{slideHistory?.date}</span>
-                      </div>
-                    ))}
-                </div>
-
-                <div></div>
-              </div>
-            </div>
-          );
-        })}
+      <div className="py-10 overflow-hidden">
+        <AnimatePresence custom={direction} initial={false} mode="wait">
+          <HistorySlide
+            key={currentIndex}
+            {...histories[currentIndex]}
+            setSlide={setSlide}
+          />
+        </AnimatePresence>
       </div>
     </div>
   );
