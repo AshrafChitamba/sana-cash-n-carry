@@ -1,3 +1,5 @@
+"use client"
+
 import { BigClientsSection } from "@/components/BigClientsSection";
 import { CategoriesSection } from "@/components/CategoriesSection";
 import { ContactUsSection } from "@/components/ContactUsSection";
