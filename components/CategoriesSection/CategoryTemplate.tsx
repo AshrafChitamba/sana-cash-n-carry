@@ -2,6 +2,7 @@
 
 import { CategoryType } from "@/data/categories";
 import { useWindowWidth } from "@/hooks/useWindowWidth";
+import clsx from "clsx";
 
 export type CategoryTemplateProps = {
   index: number;
@@ -14,28 +15,19 @@ const CategoryTemplate = (props: CategoryTemplateProps) => {
   return (
     <div
       key={props.index}
-      className={`bg-white p-6 text-center hover:bg-gray-50 transition-colors duration-200 cursor-context-menu border-gray-300
-                ${breakpoint === "xl" && props.index > 5 ? "border-t" : ""}
-                ${
-                  breakpoint === "xl" && props.index % 6 !== 5 ? "border-r" : ""
-                }
-                ${breakpoint === "nm" && props.index > 1 ? "border-t" : ""}
-                ${
-                  breakpoint === "nm" && props.index % 2 !== 1 ? "border-r" : ""
-                }
-                ${breakpoint === "sm" && props.index > 2 ? "border-t" : ""}
-                ${
-                  breakpoint === "sm" && props.index % 3 !== 2 ? "border-r" : ""
-                }
-                ${breakpoint === "md" && props.index > 3 ? "border-t" : ""}
-                ${
-                  breakpoint === "md" && props.index % 4 !== 3 ? "border-r" : ""
-                }
-                ${breakpoint === "lg" && props.index > 4 ? "border-t" : ""}
-                ${
-                  breakpoint === "lg" && props.index % 5 !== 4 ? "border-r" : ""
-                }
-              `}
+      className={clsx(
+        "bg-white p-6 text-center hover:bg-gray-50 transition-colors duration-200 cursor-context-menu border-gray-300",
+        breakpoint === "normal" && props.index > 1 ? "border-t" : "",
+        breakpoint === "normal" && props.index % 2 !== 1 ? "border-r" : "",
+        breakpoint === "small" && props.index > 2 ? "border-t" : "",
+        breakpoint === "small" && props.index % 3 !== 2 ? "border-r" : "",
+        breakpoint === "medium" && props.index > 3 ? "border-t" : "",
+        breakpoint === "medium" && props.index % 4 !== 3 ? "border-r" : "",
+        breakpoint === "large" && props.index > 4 ? "border-t" : "",
+        breakpoint === "large" && props.index % 5 !== 4 ? "border-r" : "",
+        breakpoint === "extraLarge" && props.index > 5 ? "border-t" : "",
+        breakpoint === "extraLarge" && props.index % 6 !== 5 ? "border-r" : "",
+      )}
     >
       <div className="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden bg-gray-100">
         <img
