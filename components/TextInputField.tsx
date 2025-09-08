@@ -29,7 +29,7 @@ export const TextInputField: FC<TextInputFieldProps> = (props) => {
             rows={5}
             placeholder={props.placeholder}
             disabled={props.disabled}
-            className="w-full bg-white px-4 py-3 border rounded-[10px] focus:border-primary outline-hidden resize-none"
+            className="w-full bg-[#f9fafb] px-4 py-3 border rounded-[10px] focus:border-primary outline-hidden resize-none"
             autoComplete="true"
             {...props.registerProps}
           />
@@ -39,7 +39,7 @@ export const TextInputField: FC<TextInputFieldProps> = (props) => {
             id={props.id}
             placeholder={props.placeholder}
             disabled={props.disabled}
-            className="w-full bg-white px-4 py-3 border rounded-[10px] focus:border-primary outline-hidden"
+            className="w-full bg-[#f9fafb] px-4 py-3 border rounded-[10px] focus:border-primary outline-hidden"
             autoComplete="true"
             {...props.registerProps}
           />
