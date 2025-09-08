@@ -4,6 +4,7 @@ import { HistorySlideType } from "@/data/histories";
 import { usePresenceData, motion } from "motion/react";
 import { Fragment, useRef } from "react";
 import { TbChevronLeft, TbChevronRight } from "react-icons/tb";
+import { getFormattedDate, getDateYear } from "@/utils/formatDate";
 
 type HistorySlideProps = HistorySlideType & {
   setSlide(newDirection: 1 | -1): void;
@@ -43,7 +44,7 @@ export const HistorySlide = (props: HistorySlideProps) => {
                 {slideHistory ? (
                   <div>
                     <h3 className="text-[#101828] text-[21px] font-medium mb-2.5">
-                      {new Date(slideHistory.date).getFullYear()}
+                      {getDateYear(slideHistory.date)}
                     </h3>
                     <h4 className="text-[#101828] font-medium mb-2.5">
                       {slideHistory.title}
@@ -52,11 +53,7 @@ export const HistorySlide = (props: HistorySlideProps) => {
                       {slideHistory.description}
                     </p>
                     <span className="text-[#4A5565] text-[12px] uppercase">
-                      {new Date(slideHistory.date).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "long",
-                        day: "2-digit",
-                      })}
+                      {getFormattedDate(slideHistory.date)}
                     </span>
                   </div>
                 ) : null}
