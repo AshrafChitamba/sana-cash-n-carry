@@ -9,7 +9,7 @@ const EMAIL_SERVER_USERNAME = process.env.EMAIL_SERVER_USERNAME;
 const EMAIL_SERVER_PASSWORD = process.env.EMAIL_SERVER_PASSWORD;
 const EMAIL_SERVER_PORT = process.env.EMAIL_SERVER_PORT;
 const EMAIL_RECEIVER = process.env.EMAIL_RECEIVER;
-const DEFAULT_PORT = "465"
+const DEFAULT_PORT = "465";
 
 export async function sendContactMessage(data: ContactFormData) {
   try {
@@ -31,8 +31,9 @@ export async function sendContactMessage(data: ContactFormData) {
     });
 
     await transporter.sendMail({
-      from: email,
+      from: `Sana Cash n Carry ${EMAIL_SERVER_USERNAME}`,
       to: EMAIL_RECEIVER,
+      replyTo: email,
       subject: "New Message",
       html: `
         <p><strong>Name:</strong> ${firstName} ${lastName}</p>
@@ -45,7 +46,7 @@ export async function sendContactMessage(data: ContactFormData) {
     });
 
     return { success: true, message: "Email sent!" };
-  } catch (error: any) {
+  } catch (error: unknown) {
     if (error instanceof ValidationError) {
       return {
         success: false,
