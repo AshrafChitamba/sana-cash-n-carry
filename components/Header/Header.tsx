@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
 import { SocialLinks } from "./SocialLinks";
@@ -20,7 +19,7 @@ export const Header = () => {
               (+265) 994 351 384
             </a>
 
-            <SocialLinks />
+            <SocialLinks isMobile={false} />
           </div>
         </div>
         <nav className="bg-primary p-4 md:px-8">
@@ -126,7 +125,7 @@ export const Header = () => {
           <div className="mt-8 pt-6 border-t border-gray-200">
             <div className="flex items-center gap-x-4">
               <span className="text-secondary text-sm">Follow us:</span>
-              <SocialLinks />
+              <SocialLinks isMobile={true} />
             </div>
           </div>
         </div>
