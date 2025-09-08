@@ -7,7 +7,7 @@ export const CategoriesSection = () => {
   return (
     <section id="categories" className="px-4 sm:px-8 py-8 bg-white">
       <div className="max-w-[93rem] mx-auto">
-        <h2 className="text-3xl font-medium text-header-text mb-8">
+        <h2 className="text-3xl font-medium text-secondary mb-8">
           Our Categories
         </h2>
 

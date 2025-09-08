@@ -82,7 +82,7 @@ export default function StoresMaps() {
           <Marker key={store.id} position={store.position} title={store.name}>
             <Popup closeButton={false}>
               <div className="!font-inter">
-                <h3 className="font-semibold text-sm text-header-text">
+                <h3 className="font-semibold text-sm text-secondary">
                   {store.name}
                 </h3>
                 {store.address ? (

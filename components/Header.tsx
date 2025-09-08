@@ -15,19 +15,19 @@ export const Header = () => {
       <header className="relative">
         <div className="bg-[#f9fafb] px-8 py-3">
           <div className="flex justify-end gap-x-8 max-w-[93rem] mx-auto">
-            <a href="tel:" className="text-header-text text-[14px]">
+            <a href="tel:" className="text-secondary text-[14px]">
               (+265) 994 351 384
             </a>
 
             <div className="flex items-center gap-x-2.5">
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <FaFacebookF size={16} className="text-header-text" />
+                <FaFacebookF size={16} className="text-secondary" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <FaInstagram size={16} className="text-header-text" />
+                <FaInstagram size={16} className="text-secondary" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <FaLinkedinIn size={16} className="text-header-text" />
+                <FaLinkedinIn size={16} className="text-secondary" />
               </a>
             </div>
           </div>
@@ -134,16 +134,16 @@ export const Header = () => {
 
           <div className="mt-8 pt-6 border-t border-gray-200">
             <div className="flex items-center gap-x-4">
-              <span className="text-header-text text-sm">Follow us:</span>
+              <span className="text-secondary text-sm">Follow us:</span>
               <div className="flex items-center gap-x-3">
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  <FaFacebookF size={18} className="text-header-text" />
+                  <FaFacebookF size={18} className="text-secondary" />
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram size={18} className="text-header-text" />
+                  <FaInstagram size={18} className="text-secondary" />
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedinIn size={18} className="text-header-text" />
+                  <FaLinkedinIn size={18} className="text-secondary" />
                 </a>
               </div>
             </div>

@@ -70,7 +70,7 @@ export const HistorySlide = (props: HistorySlideProps) => {
               whileTap={{ scale: 0.95 }}
             >
               <TbChevronLeft
-                className="bg-[#D9D9D9] text-header-text p-2 hover:bg-[#009689] hover:text-white rounded-full cursor-pointer"
+                className="bg-[#D9D9D9] text-secondary p-2 hover:bg-[#009689] hover:text-white rounded-full cursor-pointer"
                 size={40}
               />
             </motion.button>
@@ -83,7 +83,7 @@ export const HistorySlide = (props: HistorySlideProps) => {
               whileTap={{ scale: 0.95 }}
             >
               <TbChevronRight
-                className="bg-[#D9D9D9] text-header-text p-2 hover:bg-[#009689] hover:text-white rounded-full cursor-pointer"
+                className="bg-[#D9D9D9] text-secondary p-2 hover:bg-[#009689] hover:text-white rounded-full cursor-pointer"
                 size={40}
               />
             </motion.button>

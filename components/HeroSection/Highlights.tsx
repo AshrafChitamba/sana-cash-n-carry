@@ -18,10 +18,12 @@ export const Highlights = () => {
         {highlights.map((item, index) => (
           <div
             key={index}
-            className="flex items-center gap-2 px-4 py-2 border rounded-[20px] border-header-text whitespace-nowrap bg-[#F0FAFB] cursor-context-menu"
+            className="flex items-center gap-2 px-4 py-2 border rounded-[20px] border-secondary whitespace-nowrap bg-[#F0FAFB] cursor-context-menu"
           >
-            <FaCheck className="text-header-text text-xs" />
-            <span className="text-header-text text-xs md:text-sm font-medium">{item}</span>
+            <FaCheck className="text-secondary text-xs" />
+            <span className="text-secondary text-xs md:text-sm font-medium">
+              {item}
+            </span>
           </div>
         ))}
       </div>

@@ -17,7 +17,7 @@ export const TextInputField: FC<TextInputFieldProps> = (props) => {
       {props.label ? (
         <label
           htmlFor={props.id}
-          className="block text-sm font-medium text-header-text mb-1.5 text-start"
+          className="block text-sm font-medium text-secondary mb-1.5 text-start"
         >
           {props.label}
         </label>

@@ -8,7 +8,7 @@ export const StoresSection = () => {
     <section id="stores" className="bg-white py-10 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-medium text-header-text mb-3">
+          <h2 className="text-3xl font-medium text-secondary mb-3">
             Find Our Stores
           </h2>
           <p>

@@ -26,7 +26,7 @@ const CategoryTemplate = (props: CategoryTemplateProps) => {
         breakpoint === "large" && props.index > 4 ? "border-t" : "",
         breakpoint === "large" && props.index % 5 !== 4 ? "border-r" : "",
         breakpoint === "extraLarge" && props.index > 5 ? "border-t" : "",
-        breakpoint === "extraLarge" && props.index % 6 !== 5 ? "border-r" : "",
+        breakpoint === "extraLarge" && props.index % 6 !== 5 ? "border-r" : ""
       )}
     >
       <div className="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden bg-gray-100">
@@ -36,7 +36,7 @@ const CategoryTemplate = (props: CategoryTemplateProps) => {
           className="w-full h-full object-cover"
         />
       </div>
-      <h3 className="text-sm font-medium text-header-text">
+      <h3 className="text-sm font-medium text-secondary">
         {props.category.name}
       </h3>
     </div>
