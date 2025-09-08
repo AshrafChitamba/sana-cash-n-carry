@@ -8,7 +8,7 @@ const DESKTOP_ICONS_SIZE = 17;
 export const SocialLinks = ({ isMobile }: { isMobile: boolean }) => {
   return (
     <div
-      className={clsx("flex items-center", isMobile ? " gap-x-3" : "gap-x-2.5")}
+      className={clsx("flex items-center", isMobile ? "gap-x-3" : "gap-x-2.5")}
     >
       <a href="#" target="_blank" rel="noopener noreferrer">
         <FaFacebookF

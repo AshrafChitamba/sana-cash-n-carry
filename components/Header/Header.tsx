@@ -4,6 +4,7 @@ import { useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
 import { SocialLinks } from "./SocialLinks";
+import { NavLinks } from "./NavLinks";
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,23 +28,7 @@ export const Header = () => {
             <div>
               <img src="/logo.png" alt="SANA_LOGO" className="object-contain" />
             </div>
-            <ul className="items-center gap-x-8 text-[#FCFCFC] hidden md:flex">
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#categories">Categories</a>
-              </li>
-              <li>
-                <a href="#history">History</a>
-              </li>
-              <li>
-                <a href="#stores">Find a store</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
+            <NavLinks isMobile={false} />
             <div className="block md:hidden">
               <button onClick={toggleMobileMenu}>
                 <HiBars3BottomRight className="text-[#FCFCFC]" size={30} />
@@ -78,48 +63,7 @@ export const Header = () => {
           </div>
 
           <nav>
-            <ul className="space-y-5">
-              <li>
-                <a
-                  href="#home"
-                  className="block text-gray-800 text-lg font-medium py-2"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#categories"
-                  className="block text-gray-800 text-lg font-medium py-2"
-                >
-                  Categories
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#history"
-                  className="block text-gray-800 text-lg font-medium py-2"
-                >
-                  History
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#stores"
-                  className="block text-gray-800 text-lg font-medium py-2"
-                >
-                  Find a store
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="block text-gray-800 text-lg font-medium py-2"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
+            <NavLinks isMobile={true} />
           </nav>
 
           <div className="mt-8 pt-6 border-t border-gray-200">
