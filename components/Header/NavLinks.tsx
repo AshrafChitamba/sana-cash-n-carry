@@ -15,8 +15,8 @@ export const NavLinks = ({ isMobile }: { isMobile: boolean }) => {
         <a
           href="#home"
           className={clsx(
-            "hover:text-secondary",
-            isMobile && mobileLinkClassName
+            !isMobile && "hover:text-white",
+            isMobile && `${mobileLinkClassName} hover:text-secondary`
           )}
         >
           Home
@@ -26,8 +26,8 @@ export const NavLinks = ({ isMobile }: { isMobile: boolean }) => {
         <a
           href="#categories"
           className={clsx(
-            "hover:text-secondary",
-            isMobile && mobileLinkClassName
+            !isMobile && "hover:text-white",
+            isMobile && `${mobileLinkClassName} hover:text-secondary`
           )}
         >
           Categories
@@ -37,8 +37,8 @@ export const NavLinks = ({ isMobile }: { isMobile: boolean }) => {
         <a
           href="#history"
           className={clsx(
-            "hover:text-secondary",
-            isMobile && mobileLinkClassName
+            !isMobile && "hover:text-white",
+            isMobile && `${mobileLinkClassName} hover:text-secondary`
           )}
         >
           History
@@ -48,8 +48,8 @@ export const NavLinks = ({ isMobile }: { isMobile: boolean }) => {
         <a
           href="#stores"
           className={clsx(
-            "hover:text-secondary",
-            isMobile && mobileLinkClassName
+            !isMobile && "hover:text-white",
+            isMobile && `${mobileLinkClassName} hover:text-secondary`
           )}
         >
           Find a store
@@ -59,8 +59,8 @@ export const NavLinks = ({ isMobile }: { isMobile: boolean }) => {
         <a
           href="#contact"
           className={clsx(
-            "hover:text-secondary",
-            isMobile && mobileLinkClassName
+            !isMobile && "hover:text-white",
+            isMobile && `${mobileLinkClassName} hover:text-secondary`
           )}
         >
           Contact
