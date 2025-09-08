@@ -30,10 +30,17 @@ export const ContactForm = () => {
 
   const submitContactForm = async (data: ContactFormData) => {
     setIsLoading(true);
-    await sendContactMessage(data);
-    reset();
+    const res = await sendContactMessage(data);
+
+    if (res.success) {
+      toast.success(res.message);
+      reset();
+    } else if (res.errors) {
+      res.errors.forEach((err: string) => toast.error(err));
+    } else {
+      toast.error(res.message);
+    }
     setIsLoading(false);
-    toast.success("Message sent. Thank you!")
   };
 
   return (
