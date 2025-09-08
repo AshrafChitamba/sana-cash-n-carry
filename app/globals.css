@@ -22,7 +22,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   background: #fff;
-  scroll-behavior: smooth !important;
 }

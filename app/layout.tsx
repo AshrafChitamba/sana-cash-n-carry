@@ -24,7 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={poppinsFont.className}>
+    <html
+      lang="en"
+      className={poppinsFont.className}
+      data-scroll-behavior="smooth"
+    >
       <body className={`${interFont.variable} antialiased`}>{children}</body>
     </html>
   );

@@ -2,7 +2,7 @@ import { Highlights } from "./Highlights";
 
 export const HeroSection = () => {
   return (
-    <section className="bg-[#f0fafb] p-0 sm:p-4 md:py-4 md:px-8">
+    <section id="home" className="bg-[#f0fafb] p-0 sm:p-4 md:py-4 md:px-8">
       <div className="relative h-[380px] sm:h-[450px] md:h-[580px] w-full bg-[url('/hero-banner.jpg')] bg-cover bg-center sm:rounded-[10px] overflow-hidden grid content-center pl-[5%] max-w-[93rem] mx-auto">
         <div className="relative z-10 text-white flex flex-col gap-y-5">
           <span className="font-medium">
@@ -22,7 +22,7 @@ export const HeroSection = () => {
             Supermarket
           </h1>
           <a
-            href="/#contact-us"
+            href="/#contact"
             className="w-fit bg-[#fcfcfc] font-semibold text-secondary text-[14px] px-7 py-2.5 rounded-3xl"
           >
             contact us
