@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { TextInputField } from "../TextInputField";
 import { sendContactMessage } from "@/app/actions";
+import toast from "react-hot-toast";
 
 export const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -30,7 +31,9 @@ export const ContactForm = () => {
   const submitContactForm = async (data: ContactFormData) => {
     setIsLoading(true);
     await sendContactMessage(data);
+    reset();
     setIsLoading(false);
+    toast.success("Message sent. Thank you!")
   };
 
   return (
@@ -104,8 +107,11 @@ export const ContactForm = () => {
         />
       </div>
 
-      <button className="w-full bg-primary capitalize text-white py-3 px-4 rounded-[10px] font-medium">
-        send message
+      <button
+        className="w-full bg-primary capitalize text-white py-3 px-4 rounded-[10px] font-medium"
+        disabled={isLoading}
+      >
+        {isLoading ? "Sending..." : "send message"}
       </button>
     </form>
   );

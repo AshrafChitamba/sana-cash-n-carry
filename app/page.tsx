@@ -6,6 +6,8 @@ import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { HistoriesSection } from "@/components/HistoriesSection";
 import { StoresSection } from "@/components/StoresSection";
+import  { Toaster } from "react-hot-toast";
+
 
 export default function Home() {
   return (
@@ -18,6 +20,7 @@ export default function Home() {
       <StoresSection />
       <ContactUsSection />
       <Footer />
+      <Toaster />
     </main>
   );
 }
