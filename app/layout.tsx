@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-
-const interFont = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
 
 const poppinsFont = Poppins({
   weight: ["400", "500", "600"],
@@ -29,7 +24,7 @@ export default function RootLayout({
       className={poppinsFont.className}
       data-scroll-behavior="smooth"
     >
-      <body className={`${interFont.variable} antialiased`}>{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

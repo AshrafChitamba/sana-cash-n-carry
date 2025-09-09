@@ -81,7 +81,7 @@ export default function StoresMaps() {
         {stores.map((store) => (
           <Marker key={store.id} position={store.position} title={store.name}>
             <Popup closeButton={false}>
-              <div className="!font-inter">
+              <div>
                 <h3 className="font-semibold text-sm text-secondary">
                   {store.name}
                 </h3>

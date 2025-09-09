@@ -9,7 +9,6 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --font-poppins: var(--font-poppins);
-  --font-inter: var(--font-inter);
 }
 
 @layer base {
