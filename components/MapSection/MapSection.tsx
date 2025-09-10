@@ -13,6 +13,8 @@ export const MapSection = () => {
             </h2>
             <a
               href="https://maps.app.goo.gl/JRVRcCywJCoPyJpe7"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#e5ffb8] text-primary underline uppercase font-semibold py-4 px-8 rounded-full text-sm shadow-lg hover:shadow-xl border border-primary"
             >
               Let&apos;s go

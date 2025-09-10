@@ -1,9 +1,6 @@
 export const ContactSection = () => {
   return (
-    <section
-      id="contact"
-      className="bg-primary py-10 lg:py-16 px-4 sm:px-8"
-    >
+    <section id="contact" className="bg-primary py-10 lg:py-16 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <div className="flex justify-center">
@@ -33,12 +30,16 @@ export const ContactSection = () => {
           <div className="flex gap-7 justify-center mt-5">
             <a
               href="https://whatsapp.com/channel/0029VaIERxoFy72G4SPr5X2P"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#bdff72] text-primary underline uppercase font-semibold py-4 px-8 rounded-full text-sm shadow-lg hover:shadow-xl border border-primary"
             >
               Join our Community
             </a>
             <a
               href="https://web.facebook.com/sanacashncarrymalawi"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#bdff72] text-primary underline uppercase font-semibold py-4 px-8 rounded-full text-sm shadow-lg hover:shadow-xl border border-primary"
             >
               Follow us

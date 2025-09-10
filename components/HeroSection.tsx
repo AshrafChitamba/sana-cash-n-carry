@@ -32,9 +32,12 @@ export const HeroSection = () => {
           One Stop, Family Shopping
         </h1>
 
-        <button className="bg-[#28c878] text-primary underline uppercase font-semibold py-4 px-8 rounded-full text-sm shadow-lg hover:shadow-xl">
+        <a
+          href="#contact"
+          className="inline-block bg-[#28c878] text-primary underline uppercase font-semibold py-4 px-8 rounded-full text-sm shadow-lg hover:shadow-xl"
+        >
           Contact Us
-        </button>
+        </a>
       </div>
     </section>
   );
