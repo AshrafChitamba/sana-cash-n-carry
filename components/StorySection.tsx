@@ -12,18 +12,18 @@ export const StorySection = () => {
           />
         </div>
         <div className="order-1 self-center lg:py-3.5 text-[#f0efef]">
-          <h2 className="text-5xl font-bold text-end capitalize">
+          <h2 className="text-4xl sm:text-5xl font-bold text-end capitalize">
             We&apos;re Here Because of You
           </h2>
 
           <div className="mt-6">
-            <div className="flex flex-row-reverse items-center justify-start gap-0.5 mb-1">
+            <div className="flex flex-row-reverse items-start sm:items-center justify-start gap-0.5 mb-1">
               <CheckIcon color="#7db942" />
               <h3 className="font-semibold">
                 From Humble Beginnings to a National Presence
               </h3>
             </div>
-            <p className="text-sm mr-5 text-end pl-[25%]">
+            <p className="text-sm sm:mr-5 text-end sm:pl-[25%]">
               What started as a single cornershop has blossomed into more than
               25 branches across Malawi. Our growth is a reflection of the trust
               and support Malawians have placed in us. We are proud to serve the

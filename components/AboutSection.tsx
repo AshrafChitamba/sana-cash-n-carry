@@ -12,7 +12,7 @@ export const AboutSection = () => {
           />
         </div>
         <div className="self-center lg:py-3.5 text-primary">
-          <h2 className="text-5xl font-bold">
+          <h2 className="text-4xl sm:text-5xl font-bold">
             Malawi&apos;s Leading Supermarket
           </h2>
 
@@ -21,7 +21,7 @@ export const AboutSection = () => {
               <CheckIcon />
               <h3 className="font-semibold">Proudly Malawian at our core</h3>
             </div>
-            <p className="text-sm max-w-[75%] ml-5">
+            <p className="text-sm sm:max-w-[75%] sm:ml-5">
               Our story began and continues in Malawi, where our roots, pride,
               and purpose remain firmly grounded. Every step of our journey is
               shaped by Malawian values — community, trust, and resilience — as
