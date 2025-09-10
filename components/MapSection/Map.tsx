@@ -30,7 +30,7 @@ Leaflet.Icon.Default.mergeOptions({
     "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
 });
 
-export default function StoresMaps() {
+export default function Map() {
   const stores: Store[] = [
     {
       id: 1,
@@ -48,13 +48,13 @@ export default function StoresMaps() {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-[#DCFCE7] to-[#DBEAFE] rounded-[10px] flex-1 relative overflow-hidden">
+    <div className="w-full h-[400px] rounded-[10px] flex-1 relative overflow-hidden">
       <div className="absolute top-3 left-3 bg-white shadow px-3 py-1 rounded-[10px] text-sm font-medium z-[1000]">
         Sana Cash 'n' Carry Stores Map
       </div>
 
       <MapContainer
-        className="w-full h-[400px]"
+        className="w-full h-full"
         center={stores[0].position}
         zoom={13}
         zoomControl={false}
