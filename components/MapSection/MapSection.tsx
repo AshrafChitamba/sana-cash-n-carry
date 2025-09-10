@@ -6,9 +6,9 @@ export const MapSection = () => {
   return (
     <section className="bg-[#f0efef]">
       <div className="grid grid-cols-1 sm:grid-cols-2">
-        <div className="bg-secondary grid place-content-center">
+        <div className="bg-secondary grid place-content-center py-20 px-4 sm:px-8">
           <div className="flex flex-col items-start gap-4 max-w-lg">
-            <h2 className="text-6xl text-primary font-bold">
+            <h2 className="text-5xl  md:text-6xl text-primary font-bold">
               Find Your Nearest SANA
             </h2>
             <a
@@ -21,7 +21,7 @@ export const MapSection = () => {
             </a>
           </div>
         </div>
-        <div className="w-full h-[37.5rem] py-10 px-8">
+        <div className="w-full h-[29rem] sm:h-[33rem] md:h-[37.5rem] py-6 sm:py-10 px-4 md:px-5 lg:px-8">
           <div className="w-full h-full">
             <MapWrapper />
           </div>
