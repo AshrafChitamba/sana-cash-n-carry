@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const HeroSection = () => {
   return (
-    <section className="relative h-[38rem] w-full overflow-hidden">
+    <section className="relative h-[33rem] sm:h-[38rem] w-full overflow-hidden">
       <video
         className="w-full h-full object-cover"
         autoPlay
@@ -16,8 +16,8 @@ export const HeroSection = () => {
 
       <div className="absolute inset-0 bg-primary/70 z-10"></div>
 
-      <div className="absolute inset-0 w-full h-full z-20 flex flex-col items-center justify-center px-4 text-center">
-        <div className="mb-8">
+      <div className="absolute inset-0 w-full h-full z-20 flex flex-col items-center justify-center gap-y-8 px-4 text-center">
+        <div>
           <Image
             src="/logo.png"
             alt="Sana Logo"
@@ -28,7 +28,7 @@ export const HeroSection = () => {
           />
         </div>
 
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#f0efef] font-light mb-12 max-w-4xl leading-relaxed">
+        <h1 className="text-3xl lg:text-4xl text-[#f0efef] font-light max-w-4xl leading-relaxed">
           One Stop, Family Shopping
         </h1>
 
