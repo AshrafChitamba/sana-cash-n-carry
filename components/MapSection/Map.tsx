@@ -48,7 +48,7 @@ export default function Map() {
   ];
 
   return (
-    <div className="w-full h-[400px] rounded-[10px] flex-1 relative overflow-hidden">
+    <div className="w-full h-full rounded-[10px] relative overflow-hidden border border-primary">
       <div className="absolute top-3 left-3 bg-white shadow px-3 py-1 rounded-[10px] text-sm font-medium z-[1000]">
         Sana Cash 'n' Carry Stores Map
       </div>

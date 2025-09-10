@@ -5,7 +5,7 @@ import { MapWrapper } from "./MapWrapper";
 export const MapSection = () => {
   return (
     <section className="bg-[#f0efef]">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2">
         <div className="bg-secondary grid place-content-center">
           <div className="flex flex-col items-start gap-4 max-w-lg">
             <h2 className="text-6xl text-primary font-bold">
@@ -19,8 +19,8 @@ export const MapSection = () => {
             </a>
           </div>
         </div>
-        <div className="w-full h-[500px] grid place-content-center">
-          <div className="w-full h-full max-w-xl">
+        <div className="w-full h-[600px] py-10 px-8">
+          <div className="w-full h-full">
             <MapWrapper />
           </div>
         </div>

@@ -18,14 +18,14 @@ export const ContactSection = () => {
           </h2>
           <div className="text-[#fff8f0] text-lg">
             <p>
-              Email:{" "}
-              <span className="text-[#28c878] font-semibold">
+              Email:
+              <span className="inline-block indent-1 text-[#28c878] font-semibold">
                 customerservice@sanamalawi.com
               </span>
             </p>
             <p>
-              Call:{" "}
-              <span className="text-[#28c878] font-semibold">
+              Call:
+              <span className="inline-block indent-1 text-[#28c878] font-semibold">
                 +265 988 88 88 20
               </span>
             </p>
