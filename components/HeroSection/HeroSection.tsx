@@ -14,7 +14,7 @@ export const HeroSection = () => {
         <source src="/banner-video.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 bg-[#012b1b]/70 z-10"></div>
+      <div className="absolute inset-0 bg-primary/70 z-10"></div>
 
       <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-4 text-center">
         <div className="mb-8">
@@ -23,7 +23,7 @@ export const HeroSection = () => {
             alt="Sana Logo"
             width={300}
             height={200}
-            className="w-auto h-auto max-w-[280px] sm:max-w-[350px] md:max-w-[400px]"
+            className="w-auto h-full max-w-[280px] sm:max-w-[350px] md:max-w-[400px]"
             priority
           />
         </div>
@@ -32,7 +32,7 @@ export const HeroSection = () => {
           One Stop, Family Shopping
         </h1>
 
-        <button className="bg-[#28c878] text-[#012b1b] underline uppercase font-semibold py-4 px-8 rounded-full text-sm shadow-lg hover:shadow-xl">
+        <button className="bg-[#28c878] text-primary underline uppercase font-semibold py-4 px-8 rounded-full text-sm shadow-lg hover:shadow-xl">
           Contact Us
         </button>
       </div>
