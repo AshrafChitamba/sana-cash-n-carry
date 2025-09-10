@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const HeroSection = () => {
   return (
-    <section className="relative h-[33rem] sm:h-[38rem] w-full overflow-hidden">
+    <section className="relative h-[34rem] sm:h-[38rem] w-full overflow-hidden">
       <video
         className="w-full h-full object-cover"
         autoPlay
