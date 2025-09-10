@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden">
+    <section className="relative h-[38rem] w-full overflow-hidden">
       <video
-        className="absolute inset-0 w-full h-full object-cover"
+        className="w-full h-full object-cover"
         autoPlay
         muted
         loop
@@ -16,7 +16,7 @@ export const HeroSection = () => {
 
       <div className="absolute inset-0 bg-primary/70 z-10"></div>
 
-      <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-4 text-center">
+      <div className="absolute inset-0 w-full h-full z-20 flex flex-col items-center justify-center px-4 text-center">
         <div className="mb-8">
           <Image
             src="/logo.png"

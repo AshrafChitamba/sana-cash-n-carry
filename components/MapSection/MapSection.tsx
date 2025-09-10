@@ -21,7 +21,7 @@ export const MapSection = () => {
             </a>
           </div>
         </div>
-        <div className="w-full h-[600px] py-10 px-8">
+        <div className="w-full h-[37.5rem] py-10 px-8">
           <div className="w-full h-full">
             <MapWrapper />
           </div>
