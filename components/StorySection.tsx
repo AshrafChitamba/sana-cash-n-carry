@@ -19,7 +19,7 @@ export const StorySection = () => {
           <div className="mt-6">
             <div className="flex flex-row-reverse items-start sm:items-center justify-start gap-0.5 mb-1">
               <CheckIcon color="#7db942" />
-              <h3 className="font-semibold">
+              <h3 className="font-semibold text-end">
                 From Humble Beginnings to a National Presence
               </h3>
             </div>
