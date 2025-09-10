@@ -10,7 +10,7 @@ export const ContactSection = () => {
               className="h-36 w-36 object-contain"
             />
           </div>
-          <h2 className="text-4xl sm:text-5xl font-semibold text-[#fff8f0] mb-3 leading-14">
+          <h2 className="text-4xl md:text-5xl font-semibold text-[#fff8f0] mb-3 max-w-4xl mx-auto leading-14">
             Leave Us a Message! We&apos;d Love to Hear From You:
           </h2>
           <div className="text-[#fff8f0] text-sm sm:text-base md:text-lg">
@@ -33,7 +33,7 @@ export const ContactSection = () => {
               </a>
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 justify-center mt-5">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-7 mt-5">
             <a
               href="https://whatsapp.com/channel/0029VaIERxoFy72G4SPr5X2P"
               target="_blank"
