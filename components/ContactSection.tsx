@@ -10,24 +10,30 @@ export const ContactSection = () => {
               className="h-36 w-36 object-contain"
             />
           </div>
-          <h2 className="text-5xl font-semibold text-[#fff8f0] mb-3 leading-14">
-            Leave Us a Message! <br /> We&apos;d Love to Hear From <br /> You:
+          <h2 className="text-4xl sm:text-5xl font-semibold text-[#fff8f0] mb-3 leading-14">
+            Leave Us a Message! We&apos;d Love to Hear From You:
           </h2>
-          <div className="text-[#fff8f0] text-lg">
+          <div className="text-[#fff8f0] text-sm sm:text-base md:text-lg">
             <p>
               Email:
-              <span className="inline-block indent-1 text-[#28c878] font-semibold">
+              <a
+                href="mailto:customerservice@sanamalawi.com"
+                className="inline-block indent-1 text-[#28c878] font-semibold"
+              >
                 customerservice@sanamalawi.com
-              </span>
+              </a>
             </p>
             <p>
               Call:
-              <span className="inline-block indent-1 text-[#28c878] font-semibold">
+              <a
+                href="tel:+265988888820"
+                className="inline-block indent-1 text-[#28c878] font-semibold"
+              >
                 +265 988 88 88 20
-              </span>
+              </a>
             </p>
           </div>
-          <div className="flex gap-7 justify-center mt-5">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 justify-center mt-5">
             <a
               href="https://whatsapp.com/channel/0029VaIERxoFy72G4SPr5X2P"
               target="_blank"
