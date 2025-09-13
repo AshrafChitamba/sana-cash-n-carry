@@ -6,9 +6,9 @@ export const AboutSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-16 max-w-7xl mx-auto">
         <div className="w-full h-full">
           <img
-            src="/furniture.jpg"
+            src="/about-section.png"
             alt="sana-Mega-Store"
-            className="w-full h-[300px] sm:h-[400px] md:h-[480px] xl:h-[420px] object-cover rounded-[10px] grayscale"
+            className="w-full h-[300px] sm:h-[400px] md:h-[480px] xl:h-[420px] object-cover rounded-[10px]"
           />
         </div>
         <div className="self-center lg:py-3.5 text-primary">
